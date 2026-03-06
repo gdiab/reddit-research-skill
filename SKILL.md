@@ -42,7 +42,7 @@ No API key needed. Uses Reddit's public `.json` endpoints.
 | What | Where |
 |------|-------|
 | CLI tool | `~/.openclaw/workspace/skills/reddit-research/scripts/reddit-search.ts` |
-| Config | `~/.openclaw/workspace/skills/reddit-research/config.json` |
+| Config (yours) | `~/.openclaw/workspace/skills/reddit-research/config.local.json` (falls back to `config.json`) |
 | Cache | `~/.openclaw/workspace/memory/reddit-cache/` |
 
 ## CLI Commands
