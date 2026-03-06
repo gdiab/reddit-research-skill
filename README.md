@@ -38,6 +38,33 @@ All commands output structured JSON to stdout.
 | `--time` | `month` | `hour`, `day`, `week`, `month`, `year`, `all` |
 | `--limit` | `25` | Max results (1-100) |
 
+## Configuration
+
+Copy the example config to create your own:
+
+```bash
+cp config.json config.local.json
+```
+
+Edit `config.local.json` to add your favorite subreddits and adjust defaults:
+
+```json
+{
+  "favorite_subreddits": [
+    {"name": "AppIdeas", "reason": "People posting app wishes"},
+    {"name": "SomebodyMakeThis", "reason": "Direct product requests"},
+    {"name": "SideProject", "reason": "What indie devs are building"}
+  ],
+  "default_search_params": {
+    "limit": 25,
+    "sort": "relevance",
+    "time": "month"
+  }
+}
+```
+
+`config.local.json` is gitignored so your preferences won't be overwritten by updates.
+
 ## Caching
 
 Results are cached locally to avoid redundant requests:
