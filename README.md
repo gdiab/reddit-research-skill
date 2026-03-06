@@ -40,13 +40,15 @@ All commands output structured JSON to stdout.
 
 ## Configuration
 
+The config file is a reference for your agent (or you) — a place to track favorite subreddits and preferred defaults. **The CLI script doesn't read it**; all search parameters are passed via command-line flags.
+
 Copy the example config to create your own:
 
 ```bash
 cp config.json config.local.json
 ```
 
-Edit `config.local.json` to add your favorite subreddits and adjust defaults:
+Edit `config.local.json` to curate subreddits you want to monitor:
 
 ```json
 {
@@ -63,7 +65,7 @@ Edit `config.local.json` to add your favorite subreddits and adjust defaults:
 }
 ```
 
-`config.local.json` is gitignored so your preferences won't be overwritten by updates.
+`config.local.json` is gitignored so your preferences won't be overwritten by pulls. If you're using this as an OpenClaw skill, the agent reads `config.local.json` (or `config.json` as fallback) to know which subreddits to check when doing research.
 
 ## Caching
 
