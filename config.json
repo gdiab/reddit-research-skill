@@ -1,0 +1,18 @@
+{
+  "favorite_subreddits": [
+    {"name": "AppIdeas", "reason": "People posting app wishes"},
+    {"name": "SomebodyMakeThis", "reason": "Direct product requests"},
+    {"name": "SideProject", "reason": "What indie devs are building"},
+    {"name": "startups", "reason": "Problem/solution validation"},
+    {"name": "Entrepreneur", "reason": "Business ideas and validation"},
+    {"name": "iOSProgramming", "reason": "iOS dev community, market gaps"},
+    {"name": "reactnative", "reason": "RN ecosystem and tools"},
+    {"name": "personalfinance", "reason": "Financial pain points"},
+    {"name": "roommates", "reason": "Roommate pain points (relevant to FairShare)"}
+  ],
+  "default_search_params": {
+    "limit": 25,
+    "sort": "relevance",
+    "time": "month"
+  }
+}
