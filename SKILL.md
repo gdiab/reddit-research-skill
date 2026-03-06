@@ -41,9 +41,9 @@ No API key needed. Uses Reddit's public `.json` endpoints.
 
 | What | Where |
 |------|-------|
-| CLI tool | `~/.openclaw/workspace/skills/reddit-research/scripts/reddit-search.ts` |
-| Config (yours) | `~/.openclaw/workspace/skills/reddit-research/config.local.json` (falls back to `config.json`) |
-| Cache | `~/.openclaw/workspace/memory/reddit-cache/` |
+| CLI tool | `<skill-dir>/scripts/reddit-search.ts` |
+| Config (yours) | `<skill-dir>/config.local.json` (falls back to `config.json`) |
+| Cache | `~/.reddit-research-cache/` (configurable via `REDDIT_CACHE_DIR` env var) |
 
 ## CLI Commands
 

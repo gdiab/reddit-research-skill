@@ -17,8 +17,8 @@ import { join } from "path";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
-const USER_AGENT = "thoth-research-bot/1.0 (personal research tool)";
-const CACHE_DIR = join(homedir(), ".openclaw/workspace/memory/reddit-cache");
+const USER_AGENT = process.env.REDDIT_USER_AGENT || "reddit-research-skill/1.0 (personal research tool)";
+const CACHE_DIR = process.env.REDDIT_CACHE_DIR || join(homedir(), ".reddit-research-cache");
 const CACHE_TTL_SEARCH = 24 * 60 * 60 * 1000;   // 24h
 const CACHE_TTL_SUBREDDIT = 1 * 60 * 60 * 1000; // 1h
 const CACHE_TTL_COMMENTS = 24 * 60 * 60 * 1000; // 24h
